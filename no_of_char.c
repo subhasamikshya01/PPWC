@@ -9,7 +9,7 @@ int main(){
 	s=(char*)malloc(n*sizeof(char));
 	c=(int*)calloc(256,sizeof(int));
 	printf("enter the string:- \n");
-	fgets(s,n+1,stdin);
+	scanf("%[^\n]s",s)
 	int i=0;
 	while(s[i]!='\0'){
 		c[s[i]]++;
